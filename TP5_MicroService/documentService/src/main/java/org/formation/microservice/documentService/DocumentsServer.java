@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Import;
 
 
 @EnableAutoConfiguration
+@EnableEurekaClient
 @Import(DocumentsConfiguration.class)
 public class DocumentsServer {
 
