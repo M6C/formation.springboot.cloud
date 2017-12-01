@@ -14,6 +14,7 @@
     <module>notification-service</module>
     <module>memberService</module>
     <module>proxyService</module>
+    <module>turbineService</module>
   </modules>
 <build>
 <plugins>

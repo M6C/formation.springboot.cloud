@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: turbine-service
+  cloud:
+    config:
+      url: http://config:8888
+      failFast: true
+#      password: ${CONFIG_SERVICE_PASSWORD}
+#      username: user
