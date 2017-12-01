@@ -1,15 +1,15 @@
 package org.formation;
 
-import java.util.Properties;
-import java.util.logging.Logger;
-
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+import java.util.Properties;
+import java.util.logging.Logger;
 
 
 /**
@@ -22,6 +22,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
  */
 @SpringBootApplication
 @EnableEurekaClient
+@EnableFeignClients
 public class NotificationServer {
 
 

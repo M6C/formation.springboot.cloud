@@ -17,7 +17,7 @@ public class NotificationController {
 	@RequestMapping(path = "/sendSimple", method = RequestMethod.POST)
 	public String sendSimpleMessage(@RequestBody Email email) {
 	
-		emailService.sendSimpleMessage(email.getTo(), email.getSubject(), email.getText());
+//		emailService.sendSimpleMessage(email.getTo(), email.getSubject(), email.getText());
 		
 		return "OK";
 		

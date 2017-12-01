@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+error:
+  path: /error
+
+spring:
+  freemarker:
+    enabled: false
+  thymeleaf:
+    cache: false
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timout-millis: 20000
+    socket-timout-millis: 20000
+
+  routes:
+    member-service:
+      path: /member-service/**
+#      url: http://localhost:2222
+      serviceId: member-service
+      stripPrefix: true
+      sensitiveHeaders:
+
+    document-service:
+      path: /document-service/**
+#      url: http://localhost:3333
+      serviceId: document-service
+      stripPrefix: true
+      sensitiveHeaders:

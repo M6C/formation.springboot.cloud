@@ -1,0 +1,10 @@
+server:
+  port: 2222
+
+---
+
+spring:
+  profiles: deux
+
+server:
+  port: 2223
